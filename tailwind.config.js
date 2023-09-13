@@ -2,7 +2,16 @@
 module.exports = {
   content: [],
   theme: {
-    extend: {},
+    extend: {
+      typography: (theme) => ({
+        DEFAULT: {
+          css: {
+            'text-underline-offset': '4px',
+          },
+        },
+      }),
+    },
+    
   },
   plugins: [],
 }
