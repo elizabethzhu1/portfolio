@@ -10,13 +10,14 @@
     <script src="script.js" defer></script>
 </head>
 
-<body style="background-color:#113023;font-family:Georgia, 'Times New Roman', Times, serif">
+<body style="background-color:#113023;font-family:Georgia, 'Times New Roman', Times, serif; overflow-x: hidden;">
     <div class="text-lg text-white absolute top-10 right-10 flex flex-row gap-3">
         <a href="index.html" class="hover:underline underline-offset-2"> About </a>
         <a href="projects.html" class="hover:underline underline-offset-2"> Projects </a>
         <a href="notes.html" class="italic hover:underline underline-offset-2"> Notes </a>
     </div>
 
+    <div style="height:80vh; scroll-behavior:smooth">
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <div class="text-white mt-40 ml-20" style="font-weight: 800; font-size: 7em; line-height:100px;" id="typed"></div>
     <script>
@@ -30,34 +31,194 @@
         <div> A brief collection of thoughts & things that inspire me.</div>
     </div>
 
+    <div class="ml-20 mt-5 text-xl text-yellow-100 flex flex-row gap-3">
+        <a href="#" class="hover:underline"> quotes </a>
+        <a href="#books" class="hover:underline"> books </a>
+        <a href="#music" class="hover:underline"> music </a>
+        <a href="#films" class="hover:underline"> films </a>
+    </div>
+
     <!-- <div class="text-white absolute right-5 bottom-5"> email me for suggestions! </div> -->
 
 
-    <div class="mt-16 ml-10 text-lg text-gray-300">
+    <div class="mt-10 ml-10 text-lg text-gray-300">
         <p class="whitespace-pre italic">
-            Ever Tried.             Try Again.                                              J'accepte la grande aventure d'être moi!
-                Ever Failed.            Fail Again.                                                         <span class="text-green-200 not-italic">- Simone de Beauvoir</span>
-                    No Matter.              Fail Better.
-                            <span class="text-green-200 not-italic">- Samuel Beckett</span>   
-                                                                                                What matters most is how well you walk through the fire.
-                                                                                                                                <span class="text-green-200 not-italic">- Charles Bukowski</span> 
-        </p>
-
-        <div class="whitespace-pre flex flex-row gap-5">
+            Ever Tried.             Try Again.                                              J'accepte la grande aventure d'être moi!                              To a mind that is still,
+                Ever Failed.            Fail Again.                                                         <span class="text-green-100 not-italic">- Simone de Beauvoir</span>                                                the entire world surrenders.                     
+                    No Matter.              Fail Better.                                                                                                                                                        <span class="text-green-100 not-italic">- Zhuangzi</span>  
+                            <span class="text-green-100 not-italic">- Samuel Beckett</span>                                     What matters most is how well you walk through the fire.
+                                                                                                                                <span class="text-green-100 not-italic">- Charles Bukowski</span>                                                                                             
+        </p>                                                                                                                                                                                       
+        <div id="books" class="whitespace-pre flex flex-row gap-4 italic">
             <p>
             Life is simple. 
             We complicate it.                                         
             It’s not about doing extraordinary things.
-            It’s making the <span class="italic">ordinary</span> things extraordinary.</p>
+            It’s making the ordinary things extraordinary.</p>
             <p>
                 Meaning and reality were not hidden 
                 somewhere behind things, 
-                they were <span class="italic">in them, in all of them.</span>
-                <span class="text-green-200">- Siddhartha, Herman Hesse</span>
-            </p>                                                  
+                they were <span class="">in them, in all of them.</span>
+                    <span class="text-green-100 not-italic">- Siddartha, Herman Hesse</span>
+            </p>    
+            <p>
+                
+                We don't make mistakes. Just happy little accidents. 
+                                                     <span class="text-green-100 not-italic">- Bob Ross</span>  
+            </p>                                              
         </div>
-
-
     </div>
+    </div>
+
+    <div class="text-container text-6xl mt-10 text-yellow-100">
+        <div id="text" class="text-part"> BOOKS </div>
+        <div id="text" class="text-part"> BOOKS </div>
+        <div id="text" class="text-part"> BOOKS </div>
+        <div id="text" class="text-part"> BOOKS </div>
+        <div id="text" class="text-part"> BOOKS </div>
+        <div id="text" class="text-part"> BOOKS </div>
+        <div id="text" class="text-part"> BOOKS </div>
+        <div id="text" class="text-part"> BOOKS </div>
+        <div id="text" class="text-part"> BOOKS </div>
+        <div id="text" class="text-part"> BOOKS </div>
+    </div>
+    <!-- <div class="text-white ml-24 mt-5 text-lg"> some of my favorite reads over the years, from fiction to philosophy. </div> -->
+    <div id="music" class="text-white text-lg mt-20 ml-16 mr-16 mb-10 flex flex-row gap-6 xl:gap-8">
+        <img src="images/Educated.png" class="w-44 h-60"> 
+        <img src="images/bravenewworld.webp" class="w-40 h-60"> 
+        <img src="images/zen.png" class="w-40 h-60"> 
+        <img src="images/mans search.png" class="w-52 h-64"> 
+        <img src="images/nausea.png" class="w-56 h-64"> 
+        <img src="images/shoe dog.png" class="w-40 h-60"> 
+        <img src="images/didion.png" class="w-48 h-60"> 
+        <!-- <img src="images/dark matter.png" class="w-48 h-60">  -->
+    </div>
+
+    <div id="films" class="text-container text-6xl mt-20 text-yellow-100" style="margin-left:-200px; margin-right:-200px">
+        <div id="text" class="text-part-opposite"> MUSIC </div>
+        <div id="text" class="text-part-opposite"> MUSIC </div>
+        <div id="text" class="text-part-opposite"> MUSIC </div>
+        <div id="text" class="text-part-opposite"> MUSIC </div>
+        <div id="text" class="text-part-opposite"> MUSIC </div>
+        <div id="text" class="text-part-opposite"> MUSIC </div>
+        <div id="text" class="text-part-opposite"> MUSIC </div> 
+        <div id="text" class="text-part-opposite"> MUSIC </div> 
+        <div id="text" class="text-part-opposite"> MUSIC </div> 
+    </div>
+    <div id="music" class="text-white text-md mt-16 ml-24 mr-16 mb-10 justify-center flex flex-row gap-3 xl:gap-8 whitespace:pre">
+        <div class="text-center">
+            <div>landslide</div>
+            <div class="italic">fleetwood mac</div>
+        </div>
+        <div class="text-center"> 
+            <div>on the nature of daylight</div>
+            <div class="italic">max richter</div>
+        </div>
+        <div class="text-center">
+            <div>if i ain't got you</div>
+            <div class="italic">alicia keys</div>
+        </div>
+        <div class="text-center">
+            <div>vienna</div>
+            <div class="italic">billy joel</div>
+        </div>
+        <div class="text-center">
+            <div>the prayer</div>
+            <div class="italic">celine dion & andrea bocelli</div>
+        </div>
+        <div class="text-center">
+            <div>rivers and roads</div>
+            <div class="italic">the head and the heart</div>
+        </div>
+    </div>
+
+    <div class="text-white text-md mt-10 ml-20 mr-16 justify-center mb-10 flex flex-row gap-3 xl:gap-8 whitespace:pre">
+        <div class="text-center">
+            <div>ne me quitte pas</div>
+            <div class="italic">jacques brel</div>
+        </div>
+        <div class="text-center">
+            <div>admv</div>
+            <div class="italic">maluma</div>
+        </div>
+        <div class="text-center"> 
+            <div>yes i'm changing</div>
+            <div class="italic">tame impala</div>
+        </div>
+        <div class="text-center">
+            <div>goodbye yellow brick road</div>
+            <div class="italic">elton john</div>
+        </div>
+        <div class="text-center">
+            <div>unchained melody</div>
+            <div class="italic">the righteous brothers</div>
+        </div>
+        <div class="text-center">
+            <div>bella ciao</div>
+            <div class="italic"> manu pilas</div>
+        </div>
+    </div>
+    
+
+    <div class="text-container text-6xl mt-20 text-yellow-100">
+        <div id="text" class="text-part"> FILMS </div>
+        <div id="text" class="text-part"> FILMS </div>
+        <div id="text" class="text-part"> FILMS </div>
+        <div id="text" class="text-part"> FILMS </div>
+        <div id="text" class="text-part"> FILMS </div>
+        <div id="text" class="text-part"> FILMS </div>
+        <div id="text" class="text-part"> FILMS </div>
+        <div id="text" class="text-part"> FILMS </div>
+        <div id="text" class="text-part"> FILMS </div>
+    </div>
+    <!-- <div class="text-white ml-24 mt-5 text-lg"> some of my favorite reads over the years, from fiction to philosophy. </div> -->
+    <div class="text-white text-lg mt-10 ml-16 mr-16 mb-10 flex flex-row gap-7 xl:gap-8">
+        <img src="images/films/truman.jpg" class="w-44 h-60"> 
+        <img src="images/films/the pianist.jpg" class="w-40 h-60"> 
+        <img src="images/films/forrest.jpg" class="w-56 h-60"> 
+        <img src="images/films/ex machina.jpg" class="w-48 h-60"> 
+        <img src="images/films/everything everywhere.jpg" class="w-44 h-60">
+        <img src="images/films/interstellar.jpg" class="w-48 h-60"> 
+        <img src="images/films/matrix.jpg" class="w-56 h-60">  
+    </div>
+
+    <div class="text-white text-lg text-center mt-20 mb-20"> always taking suggestions. send me an <a class="underline" href="mailto:elizhu@stanford.edu">email</a>!</div>
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script>
+        // Function to update animation progress based on scroll position
+        // function updateAnimations() {
+        //     const scrollY = window.scrollY;
+        //     const windowHeight = window.innerHeight;
+        //     const documentHeight = document.body.clientHeight;
+
+        //     // Calculate the scroll progress as a ratio
+        //     const scrollProgress = scrollY  (documentHeight - windowHeight) / 2;
+
+        //     // Update the animations based on the scroll progress
+        //     backward.totalProgress(scrollProgress);
+        //     forward.totalProgress(scrollProgress);
+        // }
+
+        // // Add a scroll event listener to update animations on scroll
+        // window.addEventListener("scroll", updateAnimations);
+
+        let backward = gsap.to('.text-part', {
+            xPercent: -100,
+            repeat: -1,
+            duration: 5,
+            ease: "linear",
+            })
+            .totalProgress(0.5);
+        let forward = gsap.to('.text-part-opposite', {
+            xPercent: 100,
+            repeat: -1,
+            duration: 5,
+            ease: "linear",
+            })
+            .totalProgress(0.5);
+    </script>
+
 
 </html>
