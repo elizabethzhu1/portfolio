@@ -46,3 +46,23 @@
     display: inline-block;
     line-height: 1em;
   }
+
+  .scroll-container {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+  }
+
+  .scroll {
+    animation: RightToLeft 25s infinite linear;
+    display: inline-block;
+  }
+
+  @keyframes RightToLeft {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
