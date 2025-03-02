@@ -42,13 +42,41 @@
 
 
     <div class="mt-10 mx-4 sm:ml-10 text-base sm:text-lg text-gray-300">
-        <p class="whitespace-pre-wrap sm:whitespace-pre italic">
+        <!-- Desktop quotes with whitespace-pre (hidden on mobile) -->
+        <p class="hidden sm:block whitespace-pre italic">
             Ever Tried.             Try Again.                                              J'accepte la grande aventure d'être moi!                              To a mind that is still,
                 Ever Failed.            Fail Again.                                                         <span class="text-green-100 not-italic">- Simone de Beauvoir</span>                                                the entire world surrenders.                     
                     No Matter.              Fail Better.                                                                                                                                                        <span class="text-green-100 not-italic">- Zhuangzi</span>  
                             <span class="text-green-100 not-italic">- Samuel Beckett</span>                                     What matters most is how well you walk through the fire.
                                                                                                                                 <span class="text-green-100 not-italic">- Charles Bukowski</span>                                                                                             
-        </p>                                                                                                                                                                                       
+        </p>
+        
+        <!-- Mobile quotes with explicit grid layout (hidden on desktop) -->
+        <div class="sm:hidden grid grid-cols-1 gap-6 italic">
+            <div class="border-l-2 border-green-800 pl-3">
+                <div>Ever Tried. Try Again.</div>
+                <div>Ever Failed. Fail Again.</div> 
+                <div>No Matter. Fail Better.</div>
+                <div class="text-green-100 not-italic">- Samuel Beckett</div>
+            </div>
+            
+            <div class="border-l-2 border-green-800 pl-3">
+                <div>J'accepte la grande aventure d'être moi!</div>
+                <div class="text-green-100 not-italic">- Simone de Beauvoir</div>
+            </div>
+            
+            <div class="border-l-2 border-green-800 pl-3">
+                <div>To a mind that is still, the entire world surrenders.</div>
+                <div class="text-green-100 not-italic">- Zhuangzi</div>
+            </div>
+            
+            <div class="border-l-2 border-green-800 pl-3">
+                <div>What matters most is how well you walk through the fire.</div>
+                <div class="text-green-100 not-italic">- Charles Bukowski</div>
+            </div>
+        </div>
+        
+        <!-- Books section -->
         <div id="books" class="whitespace-pre-wrap sm:whitespace-pre flex flex-col sm:flex-row gap-4 italic mt-6">
             <p>
             Life is simple. 
