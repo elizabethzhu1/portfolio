@@ -77,23 +77,46 @@
         </div>
         
         <!-- Books section -->
-        <div id="books" class="whitespace-pre-wrap sm:whitespace-pre flex flex-col sm:flex-row gap-4 italic mt-6">
-            <p>
-            Life is simple. 
-            We complicate it.                                         
-            It's not about doing extraordinary things.
-            It's making the ordinary things extraordinary.</p>
-            <p>
-                Meaning and reality were not hidden 
-                somewhere behind things, 
-                they were <span class="">in them, in all of them.</span>
-                    <span class="text-green-100 not-italic">- Siddartha, Herman Hesse</span>
-            </p>    
-            <p>
+        <div id="books" class="mt-6">
+            <!-- Desktop quotes with original spacing (hidden on mobile) -->
+            <div class="hidden sm:flex sm:flex-row gap-4 italic whitespace-pre">
+                <p>
+                Life is simple. 
+                We complicate it.                                         
+                It's not about doing extraordinary things.
+                It's making the ordinary things extraordinary.</p>
+                <p>
+                    Meaning and reality were not hidden 
+                    somewhere behind things, 
+                    they were <span class="">in them, in all of them.</span>
+                        <span class="text-green-100 not-italic">- Siddartha, Herman Hesse</span>
+                </p>    
+                <p>
+                    
+                    We don't make mistakes. Just happy little accidents. 
+                                                 <span class="text-green-100 not-italic">- Bob Ross</span>  
+                </p>                                              
+            </div>
+            
+            <!-- Mobile quotes with consistent styling (hidden on desktop) -->
+            <div class="sm:hidden grid grid-cols-1 gap-6 italic">
+                <div class="border-l-2 border-green-800 pl-3">
+                    <div>Life is simple. We complicate it.</div>
+                    <div>It's not about doing extraordinary things.</div>
+                    <div>It's making the ordinary things extraordinary.</div>
+                </div>
                 
-                We don't make mistakes. Just happy little accidents. 
-                                                     <span class="text-green-100 not-italic">- Bob Ross</span>  
-            </p>                                              
+                <div class="border-l-2 border-green-800 pl-3">
+                    <div>Meaning and reality were not hidden somewhere behind things,</div>
+                    <div>they were in them, in all of them.</div>
+                    <div class="text-green-100 not-italic">- Siddartha, Herman Hesse</div>
+                </div>
+                
+                <div class="border-l-2 border-green-800 pl-3">
+                    <div>We don't make mistakes. Just happy little accidents.</div>
+                    <div class="text-green-100 not-italic">- Bob Ross</div>
+                </div>
+            </div>
         </div>
         <div class="text-yellow-100 mt-10 text-xl text-center italic whitespace-pre-wrap sm:whitespace-pre">  ↓ stuff that I like  ↓ </div>
     </div>
