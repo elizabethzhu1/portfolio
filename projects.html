@@ -10,20 +10,20 @@
     <script src="script.js" defer></script>
 </head>
 
-<body style="background-color:#113023;font-family:Georgia, 'Times New Roman', Times, serif">
-    <div class="text-lg text-white absolute top-10 right-10 flex flex-row gap-3">
+<body style="background-color:#113023;font-family:Georgia, 'Times New Roman', Times, serif" class="relative min-h-screen">
+    <div class="text-white p-4 sm:absolute sm:top-10 sm:right-10 flex flex-row gap-3 justify-center sm:justify-end">
         <a href="index.html" class="hover:underline underline-offset-2"> About </a>
         <a href="projects.html" class="italic hover:underline underline-offset-2"> Projects </a>
         <a href="notes.html" class="hover:underline underline-offset-2"> Notes </a>
     </div>
 
-    <div class="absolute top-1/3">
-        <h1 class="ml7 ml-20">
+    <div class="px-6 pt-16 sm:pt-0 sm:absolute sm:top-1/3">
+        <h1 class="ml7 sm:ml-20">
         <span class="text-wrapper">
-            <span class="letters text-white text-8xl">Projects</span>
+            <span class="letters text-white text-4xl sm:text-6xl md:text-7xl lg:text-8xl">Projects</span>
         </span>
         </h1>
-        <div class="flex flex-row gap-4 ml-20 text-xl text-green-200">
+        <div class="flex flex-wrap sm:flex-row gap-4 sm:ml-20 text-lg sm:text-xl text-green-200">
             <a href="https://www.dialexicon.org/" class="hover:underline"> dialexicon </a>
             <a href="https://bookify-v1.vercel.app" class="hover:underline"> bookify </a>
             <a href="https://newsmapper-v1.vercel.app" class="hover:underline"> newsmapper </a>
@@ -34,5 +34,5 @@
     </div>
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-
+</body>
 </html>

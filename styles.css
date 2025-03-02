@@ -76,18 +76,30 @@
     width: fit-content;
     flex: auto;
     flex-direction: row;
+    overflow-x: hidden;
   }
 
   .text-part {
     display: flex;
     align-items: center;
     flex-shrink: 0;
-    padding:0 4px;
+    padding: 0 4px;
   }
 
   .text-part-opposite {
     display: flex;
     align-items: center;
     flex-shrink: 0;
-    padding:0 4px;
+    padding: 0 4px;
+  }
+  
+  @media (max-width: 640px) {
+    #typed {
+      font-size: 3em !important;
+      line-height: 1.2 !important;
+    }
+    
+    .ml6, .ml7 {
+      font-size: 2.5em;
+    }
   }
