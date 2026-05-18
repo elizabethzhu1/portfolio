@@ -170,7 +170,7 @@
 
   .project-name {
     color: #bbf7d0;
-    font-size: clamp(1.35rem, 3vw, 2.4rem);
+    font-size: clamp(1rem, 2vw, 1.35rem);
     line-height: 1.1;
   }
 
