@@ -41,3 +41,28 @@ anime.timeline({})
     easing: "easeOutExpo",
     delay: (el, i) => 50 * i
   })
+
+document.querySelectorAll('.project-visual img').forEach((image) => {
+  var visual = image.closest('.project-visual');
+  if (!visual) return;
+
+  var markLoaded = function () {
+    visual.classList.add('is-loaded');
+  };
+
+  if (image.complete && image.naturalWidth > 0) {
+    if (image.decode) {
+      image.decode().then(markLoaded).catch(markLoaded);
+    } else {
+      markLoaded();
+    }
+  } else {
+    image.addEventListener('load', function () {
+      if (image.decode) {
+        image.decode().then(markLoaded).catch(markLoaded);
+      } else {
+        markLoaded();
+      }
+    }, { once: true });
+  }
+});

@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elizabeth Zhu</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preload" as="image" href="images/projects/optimized/dialexicon.png" fetchpriority="high">
+    <link rel="preload" as="image" href="images/projects/optimized/hippocampus-model.png" fetchpriority="high">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <script src="script.js" defer></script>
 </head>
@@ -15,6 +17,7 @@
         <a href="index.html" class="hover:underline underline-offset-2"> About </a>
         <a href="projects.html" class="text-green-200 hover:underline underline-offset-2"> Projects </a>
         <a href="photography.html" class="hover:underline underline-offset-2"> Photography </a>
+        <!-- <a href="reading.html" class="hover:underline underline-offset-2"> Reading </a> -->
     </div>
 
     <main class="projects-page px-6 pt-16 pb-16 sm:pt-28">
@@ -30,7 +33,7 @@
         <section class="projects-list" aria-label="Selected projects">
             <article class="project-entry">
                 <a class="project-visual" href="https://www.dialexicon.org/" aria-label="Open dialexicon">
-                    <img src="images/projects/dialexicon.png" alt="dialexicon screenshot" loading="lazy" onerror="this.closest('.project-visual').classList.add('is-missing'); this.remove();">
+                    <img src="images/projects/optimized/dialexicon.png" alt="dialexicon screenshot" loading="eager" fetchpriority="high" decoding="async" onerror="this.closest('.project-visual').classList.add('is-missing'); this.remove();">
                     <span class="project-fallback">Dialexicon</span>
                 </a>
                 <div class="project-copy">
@@ -44,7 +47,7 @@
 
             <article class="project-entry">
                 <a class="project-visual" href="https://github.com/elizabethzhu1/hippocampus_model" aria-label="Open hippocampus model">
-                    <img src="images/projects/hippocampus-model.png" alt="hippocampus model screenshot" loading="lazy" onerror="this.closest('.project-visual').classList.add('is-missing'); this.remove();">
+                    <img src="images/projects/optimized/hippocampus-model.png" alt="hippocampus model screenshot" loading="eager" fetchpriority="high" decoding="async" onerror="this.closest('.project-visual').classList.add('is-missing'); this.remove();">
                     <span class="project-fallback">Wilson Cowan Models of the Hippocampus</span>
                 </a>
                 <div class="project-copy">
@@ -56,9 +59,36 @@
                 </div>
             </article>
 
+
+            <article class="project-entry">
+                <a class="project-visual" href="https://drive.google.com/file/d/1sWmEsTaf7DCg9tNcjIkxCmIfeZtoGlXV/view" aria-label="Open equitable bus routes">
+                    <img src="images/projects/optimized/equitable-bus-routes.png" alt="equitable bus routes screenshot" loading="lazy" fetchpriority="low" decoding="async" onerror="this.closest('.project-visual').classList.add('is-missing'); this.remove();">
+                    <span class="project-fallback">equitable bus routes</span>
+                </a>
+                <div class="project-copy">
+                    <div class="project-title-row">
+                        <a href="https://drive.google.com/file/d/1sWmEsTaf7DCg9tNcjIkxCmIfeZtoGlXV/view" class="project-name">Can we make the SF Muni More Equitable?</a>
+                    </div>
+                    <p class="project-description">Using Q-Learning to Improve SF Muni Bus Routes (CS 238 Project)</p>
+                </div>
+            </article>
+
+            <article class="project-entry">
+                <a class="project-visual" href="https://drive.google.com/file/d/1uJksUmvyTT36IcSY_5oI-5Le_fzt6p01/view?usp=sharing" aria-label="Moral Reasoning in LLMs">
+                    <img src="images/projects/optimized/moral-reasoning.png" alt="moral reasoning" loading="lazy" fetchpriority="low" decoding="async" onerror="this.closest('.project-visual').classList.add('is-missing'); this.remove();">
+                    <span class="project-fallback">Moral reasoning in LLMs (Honors Thesis)</span>
+                </a>
+                <div class="project-copy">
+                    <div class="project-title-row">
+                        <a href="https://drive.google.com/file/d/1uJksUmvyTT36IcSY_5oI-5Le_fzt6p01/view?usp=sharing" class="project-name">Emergent Moral Reasoning in LLMs using RL</a>
+                    </div>
+                    <p class="project-description">My Senior Honors Thesis, advised by Prof. Noah Goodman.</p>
+                </div>
+            </article>
+
             <article class="project-entry">
                 <a class="project-visual" href="https://github.com/elizabethzhu1/alzheimers_gene_prediction" aria-label="Open alzheimer's prediction">
-                    <img src="images/projects/alzheimers-prediction.png" alt="alzheimer's prediction screenshot" loading="lazy" onerror="this.closest('.project-visual').classList.add('is-missing'); this.remove();">
+                    <img src="images/projects/optimized/alzheimers-prediction.png" alt="alzheimer's prediction screenshot" loading="lazy" fetchpriority="low" decoding="async" onerror="this.closest('.project-visual').classList.add('is-missing'); this.remove();">
                     <span class="project-fallback">Predicting Alzheimer's From sRNA Sequences</span>
                 </a>
                 <div class="project-copy">
@@ -72,7 +102,7 @@
 
             <article class="project-entry">
                 <a class="project-visual" href="https://web.stanford.edu/class/archive/cs/cs224n/cs224n.1244/final-projects/ElizabethZhuSherryXie.pdf" aria-label="Open model mixture">
-                    <img src="images/projects/model-mixture.png" alt="model mixture screenshot" loading="lazy" onerror="this.closest('.project-visual').classList.add('is-missing'); this.remove();">
+                    <img src="images/projects/optimized/model-mixture.png" alt="model mixture screenshot" loading="lazy" fetchpriority="low" decoding="async" onerror="this.closest('.project-visual').classList.add('is-missing'); this.remove();">
                     <span class="project-fallback">Model Mixture</span>
                 </a>
                 <div class="project-copy">
@@ -84,36 +114,10 @@
                 </div>
             </article>
 
-            <article class="project-entry">
-                <a class="project-visual" href="https://drive.google.com/file/d/1sWmEsTaf7DCg9tNcjIkxCmIfeZtoGlXV/view" aria-label="Open equitable bus routes">
-                    <img src="images/projects/equitable-bus-routes.png" alt="equitable bus routes screenshot" loading="lazy" onerror="this.closest('.project-visual').classList.add('is-missing'); this.remove();">
-                    <span class="project-fallback">equitable bus routes</span>
-                </a>
-                <div class="project-copy">
-                    <div class="project-title-row">
-                        <a href="https://drive.google.com/file/d/1sWmEsTaf7DCg9tNcjIkxCmIfeZtoGlXV/view" class="project-name">Can we make the SF Muni More Equitable?</a>
-                    </div>
-                    <p class="project-description">Using Q-Learning to Improve SF Muni Bus Routes (CS 238 Project)</p>
-                </div>
-            </article>
-
-            <article class="project-entry">
-                <a class="project-visual" href="https://drive.google.com/file/d/1uJksUmvyTT36IcSY_5oI-5Le_fzt6p01/view?usp=sharing" aria-label="Moral Reasoning in LLMs">
-                    <img src="images/projects/moral-reasoning.png" alt="moral reasoning" loading="lazy" onerror="this.closest('.project-visual').classList.add('is-missing'); this.remove();">
-                    <span class="project-fallback">Moral reasoning in LLMs (Honors Thesis)</span>
-                </a>
-                <div class="project-copy">
-                    <div class="project-title-row">
-                        <a href="https://drive.google.com/file/d/1uJksUmvyTT36IcSY_5oI-5Le_fzt6p01/view?usp=sharing" class="project-name">Emergent Moral Reasoning in LLMs using RL</a>
-                    </div>
-                    <p class="project-description">My Senior Honors Thesis, advised by Prof. Noah Goodman.</p>
-                </div>
-            </article>
-
 
             <article class="project-entry">
                 <a class="project-visual" href="https://bookify-v1.vercel.app" aria-label="Open bookify">
-                    <img src="images/projects/bookify.png" alt="bookify screenshot" loading="lazy" onerror="this.closest('.project-visual').classList.add('is-missing'); this.remove();">
+                    <img src="images/projects/optimized/bookify.png" alt="bookify screenshot" loading="lazy" fetchpriority="low" decoding="async" onerror="this.closest('.project-visual').classList.add('is-missing'); this.remove();">
                     <span class="project-fallback">Bookify</span>
                 </a>
                 <div class="project-copy">
@@ -127,7 +131,7 @@
 
             <article class="project-entry">
                 <a class="project-visual" href="https://newsmapper-v1.vercel.app" aria-label="Open newsmapper">
-                    <img src="images/projects/newsmapper.png" alt="newsmapper screenshot" loading="lazy" onerror="this.closest('.project-visual').classList.add('is-missing'); this.remove();">
+                    <img src="images/projects/optimized/newsmapper.png" alt="newsmapper screenshot" loading="lazy" fetchpriority="low" decoding="async" onerror="this.closest('.project-visual').classList.add('is-missing'); this.remove();">
                     <span class="project-fallback">Newsmapper</span>
                 </a>
                 <div class="project-copy">
