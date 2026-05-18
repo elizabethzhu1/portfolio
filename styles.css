@@ -107,6 +107,14 @@
     padding-bottom: 2rem;
   }
 
+  .projects-subtitle {
+    max-width: 680px;
+    margin: -1.1rem 0 0;
+    color: rgba(255, 255, 255, 0.78);
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    line-height: 1.45;
+  }
+
   .projects-list {
     display: grid;
     gap: 3rem 2rem;
@@ -162,10 +170,15 @@
   }
 
   .project-copy {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    display: grid;
     gap: 1rem;
+  }
+
+  .project-title-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0.75rem;
   }
 
   .project-name {
@@ -179,6 +192,58 @@
     text-underline-offset: 0.18em;
   }
 
+  .project-github {
+    color: rgba(255, 255, 255, 0.82);
+    font-size: clamp(0.85rem, 1.4vw, 0.95rem);
+    line-height: 1.1;
+  }
+
+  .project-github:hover {
+    text-decoration: underline;
+    text-underline-offset: 0.18em;
+  }
+
+  .project-description {
+    margin: -0.6rem 0 0;
+    color: rgba(255, 255, 255, 0.72);
+    font-size: clamp(0.9rem, 1.4vw, 1rem);
+    line-height: 1.4;
+  }
+
+  .photography-page {
+    color: #ffffff;
+  }
+
+  .photography-hero,
+  .photography-frame-wrap {
+    width: min(1200px, 100%);
+    margin: 0 auto;
+  }
+
+  .photography-hero {
+    padding-bottom: 2rem;
+  }
+
+  .photography-subtitle {
+    margin: -1.1rem 0 0;
+    color: rgba(255, 255, 255, 0.78);
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    line-height: 1.45;
+  }
+
+  .photography-frame-wrap {
+    overflow: hidden;
+    border: 1px solid rgba(187, 247, 208, 0.25);
+  }
+
+  .photography-frame {
+    display: block;
+    width: 100%;
+    height: min(780px, 76vh);
+    border: 0;
+    background: #ffffff;
+  }
+
   @media (min-width: 768px) {
     .projects-page {
       padding-left: 5rem;
@@ -187,6 +252,11 @@
 
     .projects-list {
       grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .photography-page {
+      padding-left: 5rem;
+      padding-right: 5rem;
     }
   }
   

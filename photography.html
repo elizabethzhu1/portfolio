@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography | Elizabeth Zhu</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+
+<body style="background-color:#113023;font-family:Georgia, 'Times New Roman', Times, serif" class="min-h-screen">
+    <div class="text-white p-4 sm:absolute sm:top-10 sm:right-10 flex flex-row gap-3 justify-center sm:justify-end">
+        <a href="index.html" class="hover:underline underline-offset-2"> About </a>
+        <a href="projects.html" class="hover:underline underline-offset-2"> Projects </a>
+        <a href="photography.html" class="italic hover:underline underline-offset-2"> Photography </a>
+    </div>
+
+    <main class="photography-page px-6 pt-16 pb-10 sm:pt-28">
+        <section class="photography-hero">
+            <h1 class="ml7">
+                <span class="text-wrapper">
+                    <span class="letters text-green-200 text-3xl sm:text-5xl md:text-6xl lg:text-7xl">Photography</span>
+                </span>
+            </h1>
+            <p class="photography-subtitle">
+                <a href="https://photography-portfolio-plum-nu.vercel.app/main.html" class="hover:underline" target="_blank" rel="noopener noreferrer">go to photography portfolio -></a>
+            </p>
+        </section>
+
+        <section class="photography-frame-wrap" aria-label="Embedded photography portfolio">
+            <iframe
+                class="photography-frame"
+                src="https://photography-portfolio-plum-nu.vercel.app/main.html"
+                title="Elizabeth Zhu photography portfolio"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </section>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+</body>
+</html>
