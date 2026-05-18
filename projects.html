@@ -10,28 +10,103 @@
     <script src="script.js" defer></script>
 </head>
 
-<body style="background-color:#113023;font-family:Georgia, 'Times New Roman', Times, serif" class="relative min-h-screen">
+<body style="background-color:#113023;font-family:Georgia, 'Times New Roman', Times, serif" class="min-h-screen">
     <div class="text-white p-4 sm:absolute sm:top-10 sm:right-10 flex flex-row gap-3 justify-center sm:justify-end">
         <a href="index.html" class="hover:underline underline-offset-2"> About </a>
         <a href="projects.html" class="italic hover:underline underline-offset-2"> Projects </a>
     </div>
 
-    <div class="px-6 pt-16 sm:pt-0 sm:absolute sm:top-1/3">
-        <h1 class="ml7 sm:ml-20">
-        <span class="text-wrapper">
-            <span class="letters text-white text-4xl sm:text-6xl md:text-7xl lg:text-8xl">Projects</span>
-        </span>
-        </h1>
-        <div class="flex flex-wrap sm:flex-row gap-4 sm:ml-20 text-lg sm:text-xl text-green-200">
-            <a href="https://www.dialexicon.org/" class="hover:underline"> dialexicon </a>
-            <a href="https://github.com/elizabethzhu1/hippocampus_model" class="hover:underline"> hippocampus model </a>
-            <a href="https://bookify-v1.vercel.app" class="hover:underline"> bookify </a>
-            <a href="https://newsmapper-v1.vercel.app" class="hover:underline"> newsmapper </a>
-            <a href="https://github.com/elizabethzhu1/alzheimers_gene_prediction" class="hover:underline"> alzheimer's prediction </a>
-            <a href="https://web.stanford.edu/class/archive/cs/cs224n/cs224n.1244/final-projects/ElizabethZhuSherryXie.pdf" class="hover:underline"> model mixture </a>
-            <a href="https://drive.google.com/file/d/1sWmEsTaf7DCg9tNcjIkxCmIfeZtoGlXV/view" class="hover:underline"> equitable bus routes </a>
-        </div>
-    </div>
+    <main class="projects-page px-6 pt-16 pb-16 sm:pt-28">
+        <section class="projects-hero">
+            <h1 class="ml7">
+                <span class="text-wrapper">
+                    <span class="letters text-white text-4xl sm:text-6xl md:text-7xl lg:text-8xl">Projects</span>
+                </span>
+            </h1>
+        </section>
+
+        <section class="projects-list" aria-label="Selected projects">
+            <article class="project-entry">
+                <a class="project-visual" href="https://www.dialexicon.org/" aria-label="Open dialexicon">
+                    <img src="images/projects/dialexicon.png" alt="dialexicon screenshot" loading="lazy" onerror="this.closest('.project-visual').classList.add('is-missing'); this.remove();">
+                    <span class="project-fallback">dialexicon</span>
+                </a>
+                <div class="project-copy">
+                    <a href="https://www.dialexicon.org/" class="project-name">dialexicon</a>
+                </div>
+            </article>
+
+            <article class="project-entry">
+                <a class="project-visual" href="https://github.com/elizabethzhu1/hippocampus_model" aria-label="Open hippocampus model">
+                    <img src="images/projects/hippocampus-model.png" alt="hippocampus model screenshot" loading="lazy" onerror="this.closest('.project-visual').classList.add('is-missing'); this.remove();">
+                    <span class="project-fallback">hippocampus model</span>
+                </a>
+                <div class="project-copy">
+                    <a href="https://github.com/elizabethzhu1/hippocampus_model" class="project-name">hippocampus model</a>
+                </div>
+            </article>
+
+            <article class="project-entry">
+                <a class="project-visual" href="https://bookify-v1.vercel.app" aria-label="Open bookify">
+                    <img src="images/projects/bookify.png" alt="bookify screenshot" loading="lazy" onerror="this.closest('.project-visual').classList.add('is-missing'); this.remove();">
+                    <span class="project-fallback">bookify</span>
+                </a>
+                <div class="project-copy">
+                    <a href="https://bookify-v1.vercel.app" class="project-name">bookify</a>
+                </div>
+            </article>
+
+            <article class="project-entry">
+                <a class="project-visual" href="https://newsmapper-v1.vercel.app" aria-label="Open newsmapper">
+                    <img src="images/projects/newsmapper.png" alt="newsmapper screenshot" loading="lazy" onerror="this.closest('.project-visual').classList.add('is-missing'); this.remove();">
+                    <span class="project-fallback">newsmapper</span>
+                </a>
+                <div class="project-copy">
+                    <a href="https://newsmapper-v1.vercel.app" class="project-name">newsmapper</a>
+                </div>
+            </article>
+
+            <article class="project-entry">
+                <a class="project-visual" href="https://github.com/elizabethzhu1/alzheimers_gene_prediction" aria-label="Open alzheimer's prediction">
+                    <img src="images/projects/alzheimers-prediction.png" alt="alzheimer's prediction screenshot" loading="lazy" onerror="this.closest('.project-visual').classList.add('is-missing'); this.remove();">
+                    <span class="project-fallback">alzheimer's prediction</span>
+                </a>
+                <div class="project-copy">
+                    <a href="https://github.com/elizabethzhu1/alzheimers_gene_prediction" class="project-name">alzheimer's prediction</a>
+                </div>
+            </article>
+
+            <article class="project-entry">
+                <a class="project-visual" href="https://web.stanford.edu/class/archive/cs/cs224n/cs224n.1244/final-projects/ElizabethZhuSherryXie.pdf" aria-label="Open model mixture">
+                    <img src="images/projects/model-mixture.png" alt="model mixture screenshot" loading="lazy" onerror="this.closest('.project-visual').classList.add('is-missing'); this.remove();">
+                    <span class="project-fallback">model mixture</span>
+                </a>
+                <div class="project-copy">
+                    <a href="https://web.stanford.edu/class/archive/cs/cs224n/cs224n.1244/final-projects/ElizabethZhuSherryXie.pdf" class="project-name">model mixture</a>
+                </div>
+            </article>
+
+            <article class="project-entry">
+                <a class="project-visual" href="https://drive.google.com/file/d/1sWmEsTaf7DCg9tNcjIkxCmIfeZtoGlXV/view" aria-label="Open equitable bus routes">
+                    <img src="images/projects/equitable-bus-routes.png" alt="equitable bus routes screenshot" loading="lazy" onerror="this.closest('.project-visual').classList.add('is-missing'); this.remove();">
+                    <span class="project-fallback">equitable bus routes</span>
+                </a>
+                <div class="project-copy">
+                    <a href="https://drive.google.com/file/d/1sWmEsTaf7DCg9tNcjIkxCmIfeZtoGlXV/view" class="project-name">equitable bus routes</a>
+                </div>
+            </article>
+
+            <article class="project-entry">
+                <a class="project-visual" href="https://drive.google.com/file/d/1uJksUmvyTT36IcSY_5oI-5Le_fzt6p01/view?usp=sharing" aria-label="Moral Reasoning in LLMs">
+                    <img src="images/projects/moral-reasoning.png" alt="moral reasoning" loading="lazy" onerror="this.closest('.project-visual').classList.add('is-missing'); this.remove();">
+                    <span class="project-fallback">equitable bus routes</span>
+                </a>
+                <div class="project-copy">
+                    <a href="https://drive.google.com/file/d/1uJksUmvyTT36IcSY_5oI-5Le_fzt6p01/view?usp=sharing" class="project-name">moral reasoning in LLMs</a>
+                </div>
+            </article>
+        </section>
+    </main>
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 </body>
